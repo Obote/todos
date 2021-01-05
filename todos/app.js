@@ -18,6 +18,7 @@ addForm.addEventListener('submit', e => {
 
     if(todo.length){
         generateTemplate(todo);
+        addForm.reset();
     }
  
 });

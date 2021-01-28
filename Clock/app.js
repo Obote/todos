@@ -1,8 +1,18 @@
-const before = new Date('February 1 2019 7:30:59');
+const clock = document.querySelector('.clock');
 
-const now = new Date();
+const tick = () => {
 
-console.log(before);
-console.log(now);
+    const now = new Date(); 
+     const h = now.getHours();
+     const m = now.getMinutes();
+     const s = now.getSeconds();
 
+     
+
+     console.log(h, m, s);
+
+
+};
+
+setInterval(tick, 1000);
 
